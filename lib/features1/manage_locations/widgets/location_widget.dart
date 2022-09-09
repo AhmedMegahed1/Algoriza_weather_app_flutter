@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/constants.dart';
-import 'package:weather_app/features/home/presentation/pages/home.dart';
+import 'package:weather_app/feature2/home/pages/home.dart';
 
 class LocationWidget extends StatelessWidget {
   const LocationWidget({

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/constants.dart';
-import 'package:weather_app/features/home/presentation/widgets/text_button.dart';
-import 'package:weather_app/features/home/presentation/widgets/locationNow.dart';
-import 'package:weather_app/features/manage_locations/presentation/pages/manage_locations_page.dart';
+import 'package:weather_app/feature2/home/widgets/locationNow.dart';
+import 'package:weather_app/feature2/home/widgets/text_button.dart';
+
+import 'package:weather_app/features1/manage_locations/pages/manage_locations_page.dart';
 
 class Drawerr extends StatelessWidget {
   const Drawerr({Key? key}) : super(key: key);

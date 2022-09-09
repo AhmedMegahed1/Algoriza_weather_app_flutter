@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
-import 'package:weather_app/features/home/presentation/widgets/day_weather_widget.dart';
+import 'package:weather_app/feature2/home/widgets/day_weather_widget.dart';
 
-class WeekForecastWidget extends StatelessWidget {
-  const WeekForecastWidget({Key? key}) : super(key: key);
+class WeekForecast extends StatelessWidget {
+  const WeekForecast({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

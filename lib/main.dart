@@ -5,7 +5,6 @@ import 'package:weather_app/core/data/local/local.dart';
 import 'package:weather_app/core/data/remote/dio_helper.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
-import 'package:weather_app/features/home/presentation/pages/home.dart';
 
 import 'features/splash_screen/page/splash_sreens.dart';
 

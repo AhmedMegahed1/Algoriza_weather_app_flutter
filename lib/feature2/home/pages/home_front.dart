@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
-import 'package:weather_app/features/home/presentation/widgets/weather_chart_widget.dart';
+import 'package:weather_app/feature2/home/widgets/weather_chart_widget.dart';
 
 class HomeFrontPage extends StatelessWidget {
   HomeFrontPage({Key? key}) : super(key: key);

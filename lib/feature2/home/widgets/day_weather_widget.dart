@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:weather_app/features/home/presentation/widgets/humidity_widget.dart';
+import 'package:weather_app/feature2/home/widgets/humidity_widget.dart';
 
 class DayWeatherWidget extends StatelessWidget {
   const DayWeatherWidget({

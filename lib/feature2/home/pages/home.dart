@@ -4,10 +4,11 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
-import 'package:weather_app/features/home/presentation/pages/home_front.dart';
-import 'package:weather_app/features/home/presentation/pages/loading.dart';
-import 'package:weather_app/features/home/presentation/widgets/drawer.dart';
-import 'package:weather_app/features/home/presentation/widgets/week_forecast.dart';
+import 'package:weather_app/feature2/home/pages/home_front.dart';
+import 'package:weather_app/feature2/home/pages/loading.dart';
+import 'package:weather_app/feature2/home/widgets/drawer.dart';
+import 'package:weather_app/feature2/home/widgets/week_forecast.dart';
+
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class HomePage extends StatelessWidget {
       builder: (context, state) {
         final cubit = AppCubit.get(context);
         if (state is! GetDataSuccessState) {
-          return const HomeLoading();
+          return const Loading();
         } else {
           return Scaffold(
             drawer: const Drawerr(),
@@ -111,7 +112,7 @@ class HomePage extends StatelessWidget {
                               const SizedBox(
                                 height: 16.0,
                               ),
-                              const WeekForecastWidget(),
+                              const WeekForecast(),
                               const SizedBox(
                                 height: 16.0,
                               ),

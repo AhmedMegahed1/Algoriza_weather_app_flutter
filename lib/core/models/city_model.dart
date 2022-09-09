@@ -1,8 +1,8 @@
-import 'package:weather_app/core/models/coordinates_model.dart';
+import 'package:weather_app/core/models/coordinate_model.dart';
 
 class CityModel {
   String? name;
-  CoordinatesModel? coordinates;
+  CoordinateModel? coordinates;
   String? country;
   int? population;
   int? sunrise;
@@ -10,7 +10,7 @@ class CityModel {
 
   CityModel.fromJson(Map<String, dynamic> json) {
     name = json['name'] ?? '';
-    coordinates = CoordinatesModel.fromJson(json['coord']);
+    coordinates = CoordinateModel.fromJson(json['coord']);
     country = json['country'] ?? '';
     population = json['population'] ?? 0;
     sunrise = json['sunrise'] ?? 0;

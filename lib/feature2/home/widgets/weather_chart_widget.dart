@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:tiny_charts/tiny_charts.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/constants.dart';
-import 'package:weather_app/features/home/presentation/widgets/text_button.dart';
-import 'package:weather_app/features/home/presentation/widgets/weather_hour.dart';
+import 'package:weather_app/feature2/home/widgets/text_button.dart';
+import 'package:weather_app/feature2/home/widgets/weather_hour.dart';
+import 'package:weather_app/feature3/next24/pages/Next_24houre.dart';
 
-import '../../../next24/presentation/pages/Next_24houre.dart';
+
 
 class WeatherChart extends StatelessWidget {
   const WeatherChart({Key? key}) : super(key: key);

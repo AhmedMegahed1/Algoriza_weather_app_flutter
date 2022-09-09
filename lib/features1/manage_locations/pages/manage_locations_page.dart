@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
-import 'package:weather_app/features/manage_locations/presentation/widgets/location_widget.dart';
-import 'package:weather_app/features/manage_locations/presentation/widgets/show_bottom_sheet.dart';
+import 'package:weather_app/features1/manage_locations/widgets/location_widget.dart';
+import 'package:weather_app/features1/manage_locations/widgets/show_bottom_sheet.dart';
+
 
 class ManageLocationsPage extends StatelessWidget {
   ManageLocationsPage({Key? key}) : super(key: key);
