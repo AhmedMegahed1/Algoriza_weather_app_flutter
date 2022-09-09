@@ -4,8 +4,7 @@ import 'package:weather_app/core/models/weather_data_model.dart';
 import 'package:weather_app/core/utils/constants.dart';
 
 class WeatherHour extends StatelessWidget {
-  const WeatherHour({Key? key, required this.data})
-      : super(key: key);
+  const WeatherHour({Key? key, required this.data}) : super(key: key);
 
   final WeatherDataModel data;
 
@@ -31,7 +30,13 @@ class WeatherHour extends StatelessWidget {
           const SizedBox(
             height: 8.0,
           ),
-          Text(getWeatherIcon(data.weatherModels![0].id!),  style: const TextStyle(fontSize: 25.0,),),
+          Text(
+            getWeatherIcon(data.weatherModels![0].id!),
+            style: const TextStyle(
+              fontSize: 25.0,
+              color: Colors.yellow,
+            ),
+          ),
           const SizedBox(
             height: 8.0,
           ),

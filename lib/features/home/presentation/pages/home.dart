@@ -5,7 +5,7 @@ import 'package:lottie/lottie.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
 import 'package:weather_app/features/home/presentation/pages/home_front.dart';
-import 'package:weather_app/features/home/presentation/pages/home_loading.dart';
+import 'package:weather_app/features/home/presentation/pages/loading.dart';
 import 'package:weather_app/features/home/presentation/widgets/drawer.dart';
 import 'package:weather_app/features/home/presentation/widgets/week_forecast.dart';
 
@@ -174,7 +174,7 @@ class HomePage extends StatelessWidget {
                                       Column(
                                         children: [
                                           const Text(
-                                            'Sunrise',
+                                            'Sunset',
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.w700,

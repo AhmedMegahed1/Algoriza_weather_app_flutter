@@ -7,6 +7,8 @@ import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
 import 'package:weather_app/features/home/presentation/pages/home.dart';
 
+import 'features/splash_screen/page/splash_sreens.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await DioHelper.init();
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               primarySwatch: Colors.blue,
             ),
-            home: HomePage(),
+            home: const SplashScreen(),
           );
         },
       ),
