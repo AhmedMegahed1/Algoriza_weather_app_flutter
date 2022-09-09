@@ -16,7 +16,6 @@ class GetLocationPermissionSuccessState extends AppStates {}
 
 class GetLocationPermissionErrorState extends AppStates {
   GetLocationPermissionErrorState({required this.error});
-
   final String error;
 }
 

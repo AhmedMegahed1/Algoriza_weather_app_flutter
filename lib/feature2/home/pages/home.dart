@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
-import 'package:weather_app/feature2/home/pages/home_front.dart';
+import 'package:weather_app/feature2/home/pages/home1.dart';
 import 'package:weather_app/feature2/home/pages/loading.dart';
 import 'package:weather_app/feature2/home/widgets/drawer.dart';
 import 'package:weather_app/feature2/home/widgets/week_forecast.dart';
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                     backgroundColor: Colors.black,
                     expandedHeight: MediaQuery.of(context).size.height,
                     flexibleSpace: FlexibleSpaceBar(
-                      background: HomeFrontPage(),
+                      background: Home1(),
                     ),
                   ),
                   SliverList(

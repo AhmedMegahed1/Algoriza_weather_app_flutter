@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 
-import '../widgets/vertical_weather_widget.dart';
+import '../widgets/weather_widget.dart';
 
 
 class NextHour extends StatelessWidget {
@@ -36,7 +36,7 @@ class NextHour extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
-                  return VerticalWeatherWidget(
+                  return WeatherWidget(
                       index: index,
                       dataModel: AppCubit.get(context)
                           .dataModel

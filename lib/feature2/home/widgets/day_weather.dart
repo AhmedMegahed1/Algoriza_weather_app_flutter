@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:weather_app/feature2/home/widgets/humidity_widget.dart';
 
-class DayWeatherWidget extends StatelessWidget {
-  const DayWeatherWidget({
+class DayWeather extends StatelessWidget {
+  const DayWeather({
     Key? key,
     required this.day,
     required this.humidity,

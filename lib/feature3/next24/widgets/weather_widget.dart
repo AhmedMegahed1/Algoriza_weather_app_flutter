@@ -4,8 +4,8 @@ import 'package:lottie/lottie.dart';
 import 'package:weather_app/core/models/weather_data_model.dart';
 import 'package:weather_app/core/utils/constants.dart';
 
-class VerticalWeatherWidget extends StatelessWidget {
-  const VerticalWeatherWidget(
+class WeatherWidget extends StatelessWidget {
+  const WeatherWidget(
       {Key? key, required this.index, required this.dataModel})
       : super(key: key);
   final int index;

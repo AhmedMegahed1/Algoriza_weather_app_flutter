@@ -4,10 +4,10 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
-import 'package:weather_app/feature2/home/widgets/weather_chart_widget.dart';
+import 'package:weather_app/feature2/home/widgets/weather_chart.dart';
 
-class HomeFrontPage extends StatelessWidget {
-  HomeFrontPage({Key? key}) : super(key: key);
+class Home1 extends StatelessWidget {
+  Home1({Key? key}) : super(key: key);
 
   final String asset = DateTime.now().hour < 18 && DateTime.now().hour > 6
       ? "assets/lotties/day.json"

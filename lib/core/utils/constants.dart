@@ -21,6 +21,26 @@ navigate({
     return page;
   }));
 }
+getWeatherIcon(int id) {
+  if (id < 300) {
+    return '🌩';
+  } else if (id < 400) {
+    return '🌧';
+  } else if (id < 600) {
+    return '☔️';
+  } else if (id < 700) {
+    return '☃️';
+  } else if (id < 800) {
+    return '🌫';
+  } else if (id == 800) {
+    return '☀️';
+  } else if (id <= 804) {
+    return '☁️';
+  } else {
+    return ' ';
+  }
+}
+
 
 showSnackBar(BuildContext context, String text) {
   return ScaffoldMessenger.of(context)
@@ -45,29 +65,7 @@ showSnackBar(BuildContext context, String text) {
       .close;
 }
 
-
 int round(dynamic value) {
   return value.round();
 }
 
-
-
- getWeatherIcon(int id) {
-  if (id < 300) {
-    return '🌩';
-  } else if (id < 400) {
-    return '🌧';
-  } else if (id < 600) {
-    return '☔️';
-  } else if (id < 700) {
-    return '☃️';
-  } else if (id < 800) {
-    return '🌫';
-  } else if (id == 800) {
-    return '☀️';
-  } else if (id <= 804) {
-    return '☁️';
-  } else {
-    return ' ';
-  }
-}

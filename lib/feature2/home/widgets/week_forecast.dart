@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
-import 'package:weather_app/feature2/home/widgets/day_weather_widget.dart';
+import 'package:weather_app/feature2/home/widgets/day_weather.dart';
 
 class WeekForecast extends StatelessWidget {
   const WeekForecast({Key? key}) : super(key: key);
@@ -26,13 +26,13 @@ class WeekForecast extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            DayWeatherWidget(
+            DayWeather(
               day: DateTime.now(),
               humidity: cubit.fiveDaysWeather[0].humidity,
               minDegree: cubit.fiveDaysWeather[0].minTemp,
               maxDegree: cubit.fiveDaysWeather[0].maxTemp,
             ),
-            DayWeatherWidget(
+            DayWeather(
               day: DateTime.now().add(
                 const Duration(
                   days: 1,
@@ -42,7 +42,7 @@ class WeekForecast extends StatelessWidget {
               minDegree: cubit.fiveDaysWeather[1].minTemp,
               maxDegree: cubit.fiveDaysWeather[1].maxTemp,
             ),
-            DayWeatherWidget(
+            DayWeather(
               day: DateTime.now().add(
                 const Duration(
                   days: 2,
@@ -52,7 +52,7 @@ class WeekForecast extends StatelessWidget {
               minDegree: cubit.fiveDaysWeather[2].minTemp,
               maxDegree: cubit.fiveDaysWeather[2].maxTemp,
             ),
-            DayWeatherWidget(
+            DayWeather(
               day: DateTime.now().add(
                 const Duration(
                   days: 3,
@@ -62,7 +62,7 @@ class WeekForecast extends StatelessWidget {
               minDegree: cubit.fiveDaysWeather[3].minTemp,
               maxDegree: cubit.fiveDaysWeather[3].maxTemp,
             ),
-            DayWeatherWidget(
+            DayWeather(
               day: DateTime.now().add(
                 const Duration(
                   days: 4,
