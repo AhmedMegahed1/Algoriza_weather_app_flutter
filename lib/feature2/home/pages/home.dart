@@ -4,8 +4,8 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:weather_app/core/utils/blocs/app/cubit.dart';
 import 'package:weather_app/core/utils/blocs/app/states.dart';
+import 'package:weather_app/core/utils/load_page.dart';
 import 'package:weather_app/feature2/home/pages/home1.dart';
-import 'package:weather_app/feature2/home/pages/loading.dart';
 import 'package:weather_app/feature2/home/widgets/drawer.dart';
 import 'package:weather_app/feature2/home/widgets/week_forecast.dart';
 
@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       builder: (context, state) {
         final cubit = AppCubit.get(context);
         if (state is! GetDataSuccessState) {
-          return const Loading();
+          return const LoadPage();
         } else {
           return Scaffold(
             drawer: const Drawerr(),
